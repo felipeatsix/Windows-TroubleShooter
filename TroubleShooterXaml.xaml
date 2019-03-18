@@ -1,0 +1,264 @@
+﻿    <Window             
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        
+        xmlns:metro="http://schemas.codeplex.com/elysium"
+        xmlns:params="http://schemas.codeplex.com/elysium/params"
+
+        params:Manager.Theme="Light"
+        params:Manager.AccentBrush="Purple"
+        
+        Title="Wayfair TroubleShooter" Height="600" Width="800"
+        ResizeMode="NoResize"     
+    >
+
+    <Grid>            
+        <TabControl Name="TabControl" HorizontalAlignment="Center" Height="545" VerticalAlignment="Top" Width="750">            
+                                    
+            <TabItem Header="General">
+                <Grid Background="#EAECEE">                                        
+                    <Image 
+                        Name="image" 
+                        HorizontalAlignment="Center"
+                        Height="180" Margin="10,10,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="700" 
+                        Source="C:\Users\fdesouzasantos\Desktop\MyStuff\Powershell\Projects\WayfairTroubleShooter\Image.png" 
+                        Stretch="UniformToFill"
+                    />                    
+                    <Label 
+                        Name="label" 
+                        Content="Enter computer name and/or username in order to collect their data" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="25,236,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="600" 
+                        FontSize="16"
+                        FontWeight="Bold"
+                    />                                        
+                    <Label 
+                        Name="label1" 
+                        Content="Computer Name:" 
+                        HorizontalAlignment="Left" 
+                        Height="33" 
+                        Margin="25,293,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="115" 
+                        FontSize="14"
+                    />
+                    <Label 
+                        Name="labelusername" 
+                        Content="Username:" 
+                        HorizontalAlignment="Left" 
+                        Height="33" 
+                        Margin="25,333,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="115" 
+                        FontSize="14"
+                    />
+                    <TextBox 
+                        Name="ComputerName" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="147,294,0,0" 
+                        TextWrapping="Wrap" 
+                        VerticalAlignment="Top" 
+                        Width="224"
+                    />
+                    <TextBox 
+                        Name="Username" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="147,333,0,0" 
+                        TextWrapping="Wrap" 
+                        VerticalAlignment="Top" 
+                        Width="224"
+                    /> 
+                    <Button 
+                        Name="SearchComputer" 
+                        Content="Search" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="380,294,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="101"
+                        Cursor="Hand"                        
+                    />
+                    <Button                        
+                        Name="SearchUser" 
+                        Content="Search" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="380,333,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="101"
+                        Cursor="Hand"                        
+                    />                    
+                </Grid>            
+            </TabItem>
+
+            <TabItem Header="System">
+                <Grid Background="#EAECEE">
+                    <Label 
+                        Name="label2" 
+                        Content="Operating System:" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="10,10,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="118"
+                    />
+                    <Label 
+                        Name="label3" 
+                        Content="Installation Date:" 
+                        HorizontalAlignment="Left" 
+                        Height="27" 
+                        Margin="10,51,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"
+                    />
+                    <Label
+                        Name="BootTimeLabel"
+                        Content="Last Bootup Time:"
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="10,92,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"  
+                    />
+                    <Label
+                        Name="UserNameLabel"
+                        Content="Username:"
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="10,133,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"  
+                    />
+                    <Label
+                        Name="ModelLabel"
+                        Content="Model:"
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="10,174,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"  
+                    />                                                                                       
+                    <Label 
+                        Name="OS" 
+                        Content="" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="131,10,0,0" 
+                        VerticalAlignment="Top"
+                    />
+                    <Label 
+                        Name="InstallDate" 
+                        Content="" 
+                        HorizontalAlignment="Left" 
+                        Height="27" 
+                        Margin="131,51,0,0" 
+                        VerticalAlignment="Top"
+                    />                    
+                    <Label
+                        Name="BootTime"
+                        Content=""
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="131,92,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"  
+                    />
+                    <Label
+                        Name="UserNameInfo"
+                        Content=""
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="131,133,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="180"  
+                    />
+                    <Label
+                        Name="Model"
+                        Content=""
+                        HorizontalAlignment="Left" 
+                        Height="26" 
+                        Margin="131,174,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="116"  
+                    />  
+                
+                </Grid>
+            </TabItem>
+                        
+            <TabItem Header="Application Events">
+                <Grid Background="#EAECEE">
+                    <Label 
+                        Name="label5" 
+                        Content="Last 100 application events" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="10,10,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="261" 
+                        FontWeight="Bold"
+                    />
+                    <DataGrid 
+                        Name="EVdataGrid" 
+                        HorizontalAlignment="Left" 
+                        Height="400" 
+                        Margin="10,45,0,0" 
+                        VerticalAlignment="Top"                         
+                        Width="700"                        
+                    />
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="System Events">
+                <Grid Background="#EAECEE">
+                    <Label 
+                        Name="label6" 
+                        Content="Last 100 system events" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="10,10,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="261" 
+                        FontWeight="Bold"
+                    />
+                    <DataGrid 
+                        Name="SysEvDataGrid" 
+                        HorizontalAlignment="Left" 
+                        Height="400" 
+                        Margin="10,45,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="700"
+                    />
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Processes">
+                <Grid Background="#EAECEE">
+                    <Label 
+                        Name="label7" 
+                        Content="Processes sorted by working set (ws)" 
+                        HorizontalAlignment="Left" 
+                        Height="28" 
+                        Margin="10,10,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="300" 
+                        FontWeight="Bold"
+                    />
+                    <DataGrid 
+                        Name="ProcDataGrid" 
+                        HorizontalAlignment="Left" 
+                        Height="400" 
+                        Margin="10,45,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="700"
+                    />
+                </Grid>            
+            </TabItem>        
+       
+        </TabControl>
+    </Grid>
+</Window>
