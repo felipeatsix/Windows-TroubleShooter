@@ -1,4 +1,4 @@
-﻿$MyPath = Split-Path -Path $MyInvocation.MyCommand.Definition
+$MyPath = Split-Path -Path $MyInvocation.MyCommand.Definition
 $ElysiumPath = "$MyPath\Elysium_DLL_files"
 
 [void][System.Reflection.Assembly]::LoadFrom("$ElysiumPath\Elysium.dll")
@@ -19,6 +19,7 @@ $BlankMessage = "* name field cannot be blank!"
 $ConnectionMessage = "* is not reachable!"
 $SuccessMessage = "* data has been successfully collected!"
 $UserMessage = "User * could not be found!"
+$FailedMessage = "Failed to get information from *, check if you have admin privileges in the destination computer"
 
 $NR = (New-Object System.Xml.XmlNodeReader $Form)
 $Win = [Windows.Markup.XamlReader]::Load($NR) 
