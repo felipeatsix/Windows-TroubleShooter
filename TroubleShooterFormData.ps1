@@ -19,7 +19,7 @@ $BlankMessage = "* name field cannot be blank!"
 $ConnectionMessage = "* is not reachable!"
 $SuccessMessage = "* data has been successfully collected!"
 $UserMessage = "User * could not be found!"
-$FailedMessage = "Failed to get information from *, check if you have admin privileges in the destination computer"
+$FailedMessage = "Failed to get information from *, check if you have admin privileges in the destination computer."
 
 $NR = (New-Object System.Xml.XmlNodeReader $Form)
 $Win = [Windows.Markup.XamlReader]::Load($NR) 
