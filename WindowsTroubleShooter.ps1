@@ -1,4 +1,4 @@
-﻿Begin {
+Begin {
 
     Add-Type -AssemblyName PresentationFramework
     $LoadPath = Split-Path -Path $MyInvocation.MyCommand.Definition
@@ -45,10 +45,14 @@ Process {
                     [System.Windows.MessageBox]::Show($Message,'Success',$OKButton,$Success)                    
                 }
 
-                Catch { [System.Windows.MessageBox]::Show("Failed to grab information from $ComputerName",'Failed',$OKButton,$Exclamation) } 
+                Catch {                     
+                
+                    $Message = $FailedMessage.Replace('*',$ComputerName)
+                    [System.Windows.MessageBox]::Show("$Message",'Failed',$OKButton,$Exclamation) 
+                } 
             }
         }
-        
+
         Else { [System.Windows.MessageBox]::Show($BlankMessage,'Error',$OKButton,$Warning)}
     })
 }
