@@ -20,8 +20,7 @@
                         HorizontalAlignment="Center"
                         Height="180" Margin="10,10,0,0" 
                         VerticalAlignment="Top" 
-                        Width="700" 
-                        Source="C:\Users\fdesouzasantos\Desktop\MyStuff\Powershell\Projects\WayfairTroubleShooter\Image.png" 
+                        Width="700"                         
                         Stretch="UniformToFill"
                     />                    
                     <Label 

@@ -4,7 +4,7 @@ Begin {
     $LoadPath = Split-Path -Path $MyInvocation.MyCommand.Definition
     . "$LoadPath\TroubleShooterFormData.ps1"
     . "$LoadPath\TroubleShooterFunctions.ps1"
-    $Win.Icon = "$LoadPath\Icon.ico"
+    # $Win.Icon = "$LoadPath\Icon.ico"
 }
 
 Process {
