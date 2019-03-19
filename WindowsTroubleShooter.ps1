@@ -1,5 +1,3 @@
-# Change test 
-
 Begin {
 
     Add-Type -AssemblyName PresentationFramework
