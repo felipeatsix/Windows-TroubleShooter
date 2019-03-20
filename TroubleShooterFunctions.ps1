@@ -1,4 +1,4 @@
-﻿Function Reset-Data {
+Function Reset-Data {
     
     $Pdg.ItemsSource = $Null
     $Pdg.items.Refresh()
