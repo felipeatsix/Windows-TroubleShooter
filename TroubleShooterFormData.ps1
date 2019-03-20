@@ -4,7 +4,7 @@ $ElysiumPath = "$MyPath\Elysium_DLL_files"
 [void][System.Reflection.Assembly]::LoadFrom("$ElysiumPath\Elysium.dll")
 [void][System.Reflection.Assembly]::LoadFrom("$ElysiumPath\Microsoft.Expression.Drawing.dll")
 
-[xml]$form = Get-Content "$MyPath\TroubleShooterXaml.xaml"
+[xml]$form = Get-Content "$MyPath\TroubleShooterForm.xaml"
 
 $ArrSysEv = New-Object System.Collections.ArrayList
 $ArrEv = New-Object System.Collections.ArrayList

@@ -2,7 +2,7 @@ Begin {
 
     Add-Type -AssemblyName PresentationFramework
     $LoadPath = Split-Path -Path $MyInvocation.MyCommand.Definition
-    . "$LoadPath\TroubleShooterForm.ps1"
+    . "$LoadPath\TroubleShooterFormData.ps1"
     . "$LoadPath\TroubleShooterFunctions.ps1"
     $Win.Icon = "$LoadPath\Images\Icon.ico"
     $Image.Source = "$LoadPath\Images\Image.png"
