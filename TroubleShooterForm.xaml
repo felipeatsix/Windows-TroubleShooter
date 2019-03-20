@@ -6,7 +6,7 @@
         params:Manager.Theme="Light"
         params:Manager.AccentBrush="Purple"
         
-        Title="Wayfair TroubleShooter" Height="600" Width="800"
+        Title="Windows TroubleShooter" Height="600" Width="800"
         ResizeMode="NoResize"     
     >
 
