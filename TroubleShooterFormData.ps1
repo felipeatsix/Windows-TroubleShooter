@@ -4,7 +4,7 @@ $ElysiumPath = "$MyPath\Elysium_DLL_files"
 [void][System.Reflection.Assembly]::LoadFrom("$ElysiumPath\Elysium.dll")
 [void][System.Reflection.Assembly]::LoadFrom("$ElysiumPath\Microsoft.Expression.Drawing.dll")
 
-[xml]$form = Get-Content "$MyPath\TroubleShooterForm.xaml"
+[xml]$form = Get-Content "$MyPath\TroubleShooterXaml.xaml"
 
 $ArrSysEv = New-Object System.Collections.ArrayList
 $ArrEv = New-Object System.Collections.ArrayList
@@ -36,3 +36,4 @@ $pdg = $win.FindName("ProcDataGrid")
 $Lbupt = $win.FindName("BootTime")
 $CurrentUser = $win.FindName("UserNameInfo")
 $Model = $win.FindName("Model")
+$Image = $Win.FindName("image")
