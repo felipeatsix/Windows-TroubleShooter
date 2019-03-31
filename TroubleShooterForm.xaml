@@ -6,9 +6,9 @@
         xmlns:params="http://schemas.codeplex.com/elysium/params"
 
         params:Manager.Theme="Light"
-        params:Manager.AccentBrush="Purple"
+        params:Manager.AccentBrush="Blue"
         
-        Title="Wayfair TroubleShooter" WindowState="Maximized"                   
+        Title="Windows TroubleShooter" WindowState="Maximized"                   
     >
 
     <Grid>            
