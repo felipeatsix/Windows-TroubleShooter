@@ -1,0 +1,146 @@
+    <!--# # Author: Felipe de Souza Santos / felipe-santos@outlook.com -->
+    
+    <Window             
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        
+        xmlns:metro="http://schemas.codeplex.com/elysium"
+        xmlns:params="http://schemas.codeplex.com/elysium/params"
+
+        params:Manager.Theme="Light"
+        params:Manager.AccentBrush="Blue"
+        
+        Title="Windows TroubleShooter" WindowState="Maximized"                   
+    >
+
+    <Grid>            
+        <TabControl Name="TabControl" HorizontalAlignment="Center" VerticalAlignment="Top">                                                
+            <TabItem Header="Start">
+                <Grid Background="#EAECEE" Width="1920" Height="1080">                                        
+                    <Image Name="image" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,0,0" Height="220" Width="720" Source=""/>                                        
+                    <Label Name="label" Content="Enter computer name and/or username to collect the data." HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,120,0" FontSize="20" FontWeight="Bold" Foreground="#F5B041"/>                                                                                
+                    <Label Name="label1" Content="Computername:" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,350,545,0" FontSize="18"/>
+                    <Label Name="labelusername" Content="Username:" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="0,400,590,0" FontSize="18"/>                                                     
+                    <TextBox Name="ComputerName" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,90,343" Height="32" Width="300" FontSize="18" />
+                    <TextBox Name="Username" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="0,0,90,243" Height="32" Width="300" FontSize="18"/>                     
+                    <Button Name="SearchComputer" Content="Get data" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="400,0,0,343" Height="32" Width="150" FontSize="16" Cursor="Hand"/>
+                    <Button Name="SearchUser" Content="Get data" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="400,0,0,243" Height="32" Width="150" FontSize="16" Cursor="Hand"/>              
+                </Grid>            
+            </TabItem>
+
+            <TabItem Header="Overview">                                                    
+                <Grid  Background="#EAECEE" Width="1920" Height="1080">                        
+                    <DockPanel Width="auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,10,0,0">
+                        <Border CornerRadius="6" BorderBrush="Purple" BorderThickness="1" Background="White">                        
+                            <Grid>                        
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>    
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>                            
+                                    <RowDefinition Height="auto"></RowDefinition>    
+                                    <RowDefinition Height="auto"></RowDefinition>    
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                        
+                                <Label Name="LabelComputerSystemInfo" Content="COMPUTER DATA:" Foreground="Purple" FontWeight="Bold" FontSize="14" Background="#82E0AA"/>
+                                <Label Name="label2" Grid.Row="1" Content="Operating System:" FontSize="14"/>
+                                <Label Name="label3" Grid.Row="2" Content="Installation Date:" FontSize="14"/>
+                                <Label Name="BootTimeLabel" Grid.Row="3" Content="Last Bootup Time:" FontSize="14"/>
+                                <Label Name="UserNameLabel" Grid.Row="4" Content="Current user:" FontSize="14"/>
+                                <Label Name="ModelLabel" Grid.Row="5" Content="Model:" FontSize="14"/>
+                                <Label Name="NetworkLabel" Grid.Row="6" Content="Ethernet Adpaters:" FontSize="14" Foreground="Purple" FontWeight="Bold" Background="#82E0AA"/>
+                                <Label Name="LaptopIPLabel" Grid.Row="7" Content="Laptop MAC / IP:" FontSize="14" />
+                                <Label Name="DOCKIPLabel" Grid.Row="8" Content="Dock MAC / IP:" FontSize="14"/>                                
+                                
+                                <Label Name="BackgroundComputerDATA" Content="" Grid.Row="0" Grid.Column="1" Background="#82E0AA"/>
+                                <Label Name="OS" Grid.Column="1" Grid.Row="1" Content="" FontSize="14"/>
+                                <Label Name="InstallDate" Grid.Column="1" Grid.Row="2" Content="" FontSize="14"/>
+                                <Label Name="BootTime" Grid.Column="1" Grid.Row="3" Content="" FontSize="14"/>
+                                <Label Name="UserNameInfo" Grid.Column="1" Grid.Row="4" Content="" FontSize="14"/>
+                                <Label Name="Model" Grid.Column="1" Grid.Row="5" Content="" FontSize="14"/>                                                            
+                                <Label Name="BackgroundEthAdapters" Content="" Grid.Row="6" Grid.Column="1" Background="#82E0AA"/>
+                                <Label Name="Laptop" Grid.Column="1" Grid.Row="7" Content="" FontSize="14"/>                                                            
+                                <Label Name="Dock" Grid.Column="1" Grid.Row="8" Content="" FontSize="14"/>                                                            
+                            </Grid>                            
+                        </Border>                                    
+                    </DockPanel>
+
+                    <DockPanel Width="auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,280,0,0">
+                            <Border CornerRadius="6" BorderBrush="Purple" BorderThickness="1" Background="White">                        
+                                <Grid>                        
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>    
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>                            
+                                        <RowDefinition Height="auto" ></RowDefinition>    
+                                        <RowDefinition Height="auto"></RowDefinition>    
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                            
+                                    <Label Name="LabelUserInfo" Content="USER DATA:" Foreground="Purple" FontWeight="Bold" FontSize="14" Background="#82E0AA"/>
+                                    <Label Name="LabelTitle" Grid.Row="1" Content="Title:" FontSize="14"/>
+                                    <Label Name="LabelDepartment" Grid.Row="2" Content="Department:" FontSize="14"/>
+                                    <Label Name="LabelDepartmentNumber" Grid.Row="3" Content="Workgroup:" FontSize="14"/>
+                                    <Label Name="LabelLoginShell" Grid.Row="4" Content="Loginshell:" FontSize="14"/>
+                                    <Label Name="LabelLastLogon" Grid.Row="5" Content="Last logon:" FontSize="14"/>
+                                    <Label Name="LabelPassLastSet" Grid.Row="6" Content="Last password set:" FontSize="14"/>
+                                    <Label Name="LabelBadPass" Grid.Row="7" Content="Last bad password attmpt:" FontSize="14"/>
+                                    <Label Name="LabelLockedOut" Grid.Row="8" Content="Is locked?:" FontSize="14"/>
+                                    
+                                    <Label Name="BackgroundUserData" Grid.Column="1" Grid.Row="0" Content="" Background="#82E0AA"/>
+                                    <Label Name="Title" Grid.Column="1" Grid.Row="1" Content="" FontSize="14"/>
+                                    <Label Name="Department" Grid.Column="1" Grid.Row="2" Content="" FontSize="14"/>
+                                    <Label Name="DepartmentNumber" Grid.Column="1" Grid.Row="3" Content="" FontSize="14"/>
+                                    <Label Name="LoginShell" Grid.Column="1" Grid.Row="4" Content="" FontSize="14"/>
+                                    <Label Name="LastLogon" Grid.Column="1" Grid.Row="5" Content="" FontSize="14"/>                                
+                                    <Label Name="PassLastSet" Grid.Column="1" Grid.Row="6" Content="" FontSize="14"/>                                
+                                    <Label Name="LastBadPass" Grid.Column="1" Grid.Row="7" Content="" FontSize="14"/>
+                                    <Label Name="LockedOut" Grid.Column="1" Grid.Row="8" Content="" FontSize="14"/>                                
+                                </Grid>                            
+                            </Border>                                    
+                    </DockPanel>                                    
+                </Grid>                                                   
+            </TabItem>
+                        
+            <TabItem Header="Application Events">
+                <Grid Background="#EAECEE" Width="1920" Height="1080">                                        
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="left" VerticalAlignment="Top" Margin="220,18,0,0">                        
+                        <RadioButton Name="RadioInfo" GroupName="Sort" Content="Information  "/>
+                        <RadioButton Name="RadioWarning" GroupName="Sort" Content="Warning  "/>
+                        <RadioButton Name="RadioError" GroupName="Sort" Content="Error  "/>
+                    </StackPanel>                                        
+                    <Label Name="label5" Content="Sorting by last 30 events" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="#F5B041"/>
+                    <DataGrid Name="EVdataGrid" HorizontalAlignment="Left" Height="Auto" Width="Auto" Margin="10,45,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="System Events">
+                <Grid Background="#EAECEE" Width="1920" Height="1080">
+                    <Label Name="label6" Content="Events in the last 3 days" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="261" FontWeight="Bold"/>
+                    <DataGrid Name="SysEvDataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,45,0,0" Height="Auto" Width="Auto"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Processes">
+                <Grid Background="#EAECEE" Width="1920" Height="1080">
+                    <Label Name="label7" Content="Processes sorted by working set (ws)" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="300" FontWeight="Bold"/>
+                    <DataGrid Name="ProcDataGrid" HorizontalAlignment="Left" Height="400" Margin="10,45,0,0" VerticalAlignment="Top" Width="700"/>
+                </Grid>            
+            </TabItem>              
+        </TabControl>
+    </Grid>
+</Window>
